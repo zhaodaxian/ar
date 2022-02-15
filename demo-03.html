@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用自定义3D模型</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+          <a-marker preset="hiro">
+            <!-- 引用obj格式模型 -->
+            <!-- <a-entity
+              position="0 0 0"
+              scale="0.4 0.4 0.4"
+              obj-model="obj: url('./models/saiceh-f1-002-obj/source/F1-2022-generic.obj'); "
+            ></a-entity> -->
+            <!-- 引用gltf格式模型 -->
+            <a-entity
+              position="0 0 0"
+              scale="0.4 0.4 0.4"
+              gltf-model="./models/saiche-01/scene.gltf"
+            ></a-entity>
+          </a-marker>
+          <a-entity camera></a-entity>
+        </a-scene>
+      </body>
+</body>
+</html>
